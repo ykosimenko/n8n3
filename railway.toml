@@ -1,6 +1,7 @@
 [deploy]
 startCommand = "n8n start"
-healthcheckPath = "/healthz"
-healthcheckTimeout = 300
-restartPolicyType = "on_failure"
+healthcheckPath = "/rest/health"
+healthcheckTimeout = 100
+restartPolicyType = "always"
 restartPolicyMaxRetries = 8
+
